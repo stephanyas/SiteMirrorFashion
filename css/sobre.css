@@ -1,0 +1,163 @@
+/* CSS Document */
+
+.container{
+	margin:0 auto;
+	width:940px;
+}
+
+/*Parte do cabeçalho*/
+.sacola{
+	background-image:url(../img/sacola.png);
+	background-repeat:no-repeat;
+	background-position:top right;
+	font-size:14px;
+	padding-right:35px;
+	text-align:right;
+	width:140px;
+	padding-top:8px;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.menu-opcoes{
+		position:absolute;
+		bottom:0;
+		right:0;
+}
+
+.menu-opcoes ul li{
+	font-size:15px;
+	display:inline;
+	margin-left:20px;
+}
+
+.menu-opcoes a{
+	color:#003366;
+}
+
+.logotipo{
+	position:relative;
+	top:20px;
+	left:50px;
+}
+
+/*Parte Rodapé*/
+
+.social a{
+	/*tamanho da imagem*/
+	height:30px;
+	width:30px;
+	/*image replacement*/
+	display:block;
+	text-indent:-9999px;
+}
+
+.social a[href*="facebook.com"]{
+	background-image:url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"]{
+	background-image:url(../img/twitter.png);
+}
+
+.social a[href*="plus.google.com"]{
+	background-image:url(../img/googleplus.png);
+}
+
+.social{
+	position:absolute;
+	top:12px;
+	right:0;
+}
+
+.social li{
+	float:left;
+	margin-left:25px;
+	list-style-type:none; /*Retira as bullets(bolinhas) da lista*/ 	
+}
+
+#faixa{
+	background-image:url(../img/sobre-background.jpg);
+	padding:10px;	
+}
+
+#centro-distribuicao {
+	margin-left:auto;
+	margin-right:auto;
+	width:550px;
+}
+
+#familia-pelho{
+	margin: 0 0 10px 10px;
+	float: right;
+}
+
+#cabecalho{
+	color:white;
+	text-align:center;
+}
+
+header{
+	position:relative;
+}
+
+body{
+	color:#333333;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;	
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+p{
+	text-align:justify;
+	text-indent:15px;
+	padding: 0 45px;
+	
+}
+
+h2{
+	border-bottom:2px solid #333333;
+	margin-top:30px;
+}
+
+figure{
+	background-color:#F2EDED;
+	border:1px solid #ccc;
+	text-align:center;	
+	padding: 15px;
+	margin: 30px;
+}
+
+figCaption{
+	font-style: italic;
+	margin-top:10px;
+}
+
+footer{
+	background-image:url(../img/fundo-rodape.png);
+	clear:both;
+	padding:20px 0;
+	color:white; /*Coloca cor no texto do lado da imagem do rodapé*/
+}
+
+footer .container{
+	position:relative;
+}
+
+p::first-letter{
+	font-weight:bold; /*Deixa a primeira letra de todos os paragrafos em negrito*/
+}
+
+h1+p{
+	text-indent:0; /*remove a identação do primeiro paragrafo depois do h1*/
+}
+
+:not(p)+p::first-line{
+	/*o not ele vai selecionar as primeiras linhas dos paragrafos que não
+	  são precedidos por outros paragrafos*/
+	font-variant:small-caps; /*altera o o visual da primeira linha do texto*/
+}
+
+
