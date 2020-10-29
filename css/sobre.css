@@ -5,19 +5,28 @@
 	width:940px;
 }
 
+.padding-top{
+	padding-top: 1px;;
+}
+
+.padding-bottom{
+	padding-bottom: 1px;
+}
+
 /*Parte do cabeçalho*/
 .sacola{
 	background-image:url(../img/sacola.png);
 	background-repeat:no-repeat;
 	background-position:top right;
 	font-size:14px;
-	padding-right:35px;
+	/*padding-right:35px;*/
 	text-align:right;
 	width:140px;
-	padding-top:8px;
+	/*padding-top:8px;*/
 	position:absolute;
 	top:0;
 	right:0;
+	margin: 0;
 }
 
 .menu-opcoes{
@@ -107,7 +116,7 @@ body{
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;	
 	margin-left:auto;
 	margin-right:auto;
-	
+	margin-bottom: 0;
 }
 
 p{
