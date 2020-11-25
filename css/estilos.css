@@ -164,7 +164,19 @@
 	width:140px;
 	margin:2px;
 	padding-bottom:10px;
+	transition: 0.7s ease-out; /*habilita a volta da animação para o estado normal*/
 }
+
+.painel li:hover{
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0 0 5px #333333;
+	transition: 0.7s ease-in;
+	transform: scale(1.2) /*rotate(-5deg); aumenta o elemento e gira os elementos sentido horario*/
+}
+
+/*.painel li:nth-child(2n):hover{ /*gira os elementos impares no sentido anti-horario
+	transform: scale(1.2) rotate(5deg);
+}*/
 
 .painel h2{
 	font-size:24px;
