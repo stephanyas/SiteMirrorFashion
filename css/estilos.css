@@ -1,13 +1,12 @@
 /* CSS Document */
 
-.container{
-	/*Container referente ao do header e ao footer*/
+/*Container referente ao do header e ao footer*/
+.container{	
 	margin:0 auto;
 	width:940px;
 }
 
 /*Parte de estilo do cabeçalho*/
-
 .sacola{
 	background-image:url(../img/sacola.png);
 	background-repeat:no-repeat;
@@ -23,9 +22,9 @@
 }
 
 .menu-opcoes{
-		position:absolute;
-		bottom:0;
-		right:0;
+	position:absolute;
+	bottom:0;
+	right:0;
 }
 
 .menu-opcoes ul li{
@@ -38,6 +37,14 @@
 	color:#003366;
 }
 
+.menu-opcoes a:hover{
+	color:#007DC6;
+}
+
+.menu-opcoes a:active{
+	color:#867DC6;
+}
+
 .logotipo{
 	position:relative;
 	top:20px;
@@ -48,39 +55,15 @@
 	text-decoration: none;
 }
 
-.menu-opcoes a:hover{
-	color:#007DC6;
-}
-
-.menu-opcoes a:active{
-		color:#867DC6;
-}
 
 /*Parte de estilo referente ao DEPARTAMENTOS, DESTAQUE e PESQUISA*/
-
-.busca, .menu-departamentos{	
-	background-color:#DCDCDC;
-	font-weight:bold;
-	text-transform:uppercase;
-	margin-right:10px;
-	width:230px;
-	float:left; 
+.destaque{
+	margin-top:10px;
 }
 
-.busca h2, .busca form,
-.menu-departamentos h2{
-	margin:10px;
-}
-
-.menu-departamentos li{
-	background-color:white;
-	margin-bottom:1px;
-	padding: 5px 10px;	
-}
-
-.menu-departamentos a{
-	color:#333333;
-	text-decoration:none;
+.busca{
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 }
 
 .busca input[type=search]{
@@ -106,16 +89,22 @@
 	padding-bottom:10px;
 }
 
-.destaque{
-	margin-top:10px;
+.menu-departamentos a{
+	color:#333333;
+	text-decoration:none;
 }
 
-.painel li{
-	display:inline-block;
-	vertical-align:top;
-	width:140px;
-	margin:2px;
-	padding-bottom:10pk
+.menu-departamentos li{
+	background-color:#ffffff;
+	margin-bottom:1px;
+	padding: 5px 10px;	
+}
+
+.menu-departamentos li li a:before{
+	/*Diferencia os links dos submenus com um traço na frente 
+	  e adiciona um simbulo*/
+	content:'\274A'; 
+	padding-right:3px;
 }
 
 /*Subilista de camisas vai estar escondida e quando o usuario
@@ -132,29 +121,39 @@
 	background-color:#DCDCDC;
 }
 
-.menu-departamentos li li a:before{
-	/*Diferencia os links dos submenus com um traço na frente 
-	  e adiciona um simbulo*/
-	content:'\274A'; 
-	padding-right:3px;
+.busca, .menu-departamentos{	
+	background-color:#DCDCDC;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-right:10px;
+	width:230px;
+	float:left; 
+}
+
+.busca h2, .busca form,
+.menu-departamentos h2{
+	margin:10px;
 }
 
 /*Parte referente a Painel de novidades e mais vendidos*/
-
-.painel{
-	margin:10px 0;
-	padding:10px;
-	width:445px;
-}
-
 .novidades{
 	float:left; /*Posicionamento do painel*/
 	background-color:#F5DCDC;
+	background: linear-gradient(#f5dcdc, #bebef4);
 }
 
 .mais-vendidos{
 	float:right; /*Posicionamento do painel*/
 	background-color:#DCDCF5;
+	background: linear-gradient(#dcdcf5, #f4bebe);
+}
+
+.painel{
+	margin:10px 0;
+	padding:10px;
+	width:445px;
+	border-radius: 4px;
+	box-shadow: insert 1px 1px 4px #999999;
 }
 
 .painel li{
@@ -172,6 +171,7 @@
 	font-weight:bold;
 	text-transform:uppercase;
 	margin-bottom:10px;
+	text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
 }
 
 .painel a{
@@ -190,6 +190,11 @@
 }
 
 /*Parte referente ao rodapé*/
+.social{
+	position:absolute;
+	top:12px;
+	right:0;
+}
 
 .social a{
 	/*tamanho da imagem*/
@@ -212,17 +217,12 @@
 	background-image:url(../img/googleplus.png);
 }
 
-.social{
-	position:absolute;
-	top:12px;
-	right:0;
-}
-
 .social li{
 	float:left;
 	margin-left:25px;
 }
 
+/**/
 header{
 	position:relative;
 }
