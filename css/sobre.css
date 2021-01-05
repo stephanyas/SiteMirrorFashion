@@ -169,4 +169,57 @@ h1+p{
 	font-variant:small-caps; /*altera o o visual da primeira linha do texto*/
 }
 
+/*tamanho mobile*/
+@media (max-width: 414px){
+	.container{
+		width: 90%;
+	}
 
+	.sacola{
+		display: none;
+	}
+
+	.menu-opcoes{
+		position: static;
+		text-align: center;
+	}
+
+	.menu-opcoes ul li{
+		display: inline-block;
+		margin: 5px;
+	}
+
+	.faixaMirror h1{
+		text-align: center;
+	}
+
+	.centroDistribuicao p, .historia p{
+		padding: 0;
+		text-align: justify;
+	}
+
+	#centro-distribuicao {
+		margin-left:auto;
+		margin-right:auto;
+		width:90%;
+	}
+
+	#centro-distribuicao img{
+		width: 100%;
+		position: relative;
+	}
+
+	#familia-pelho img{
+		width: 100%;
+		position: relative;
+		margin: 0;
+	}
+
+	header h1{
+		text-align: center;
+	}
+
+	header h1 img{
+		max-width: 50%;
+	}	
+}
