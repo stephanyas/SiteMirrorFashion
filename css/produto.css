@@ -1,0 +1,201 @@
+/*CSS Document*/
+
+.produto-back{
+    background-color: #f2f2f2;
+    margin-top: 1em;
+    border-top: 2px solid #cccccc;
+}
+
+/*legenda do produto*/
+.produto{
+    color: #333333;
+    line-height: 1.3;
+    margin-top: 2em;
+}
+
+.produto h1{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.produto p{
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.produto legend{
+    display: block;
+    font: bold 0.9em/2.5 Arial;
+    text-transform: uppercase;    
+}
+
+/*implementando funcionalidade das cores do produto*/
+.cores{
+    position: relative;
+    padding-top: 90px;
+}
+
+.cores legend{ /*trataamento de espaçamento no firefox*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cores label img{
+    display: block;
+    max-width: 100%;
+    border: 2px solid #cccccc;
+}
+
+.cores label::after{
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 30px;
+    border: 6px solid rgba(0, 0, 0, 0); /*quando a bolinha esta selecionada uma borda escura aparece suavimente*/
+    transition: 1s;
+    cursor: pointer;
+}
+
+.cores label:hover::after{
+    border: rgba(0, 0, 0, 0.1);
+}
+
+label[for=verde]::after{
+    background-color: #33cc66;
+    left: 0;
+}
+
+label[for=rosa]::after{
+    background-color: #ff6666;
+    left: 60px;
+}
+
+label[for=azul]::after{
+    background-color: #6666ff;
+    left: 120px;
+}
+
+.cores input:checked + label::after{
+    border:6px solid rgba(0, 0, 0, 0.3);
+}
+
+.cores input[type=radio]{
+    display: none;
+}
+
+.cores input:not(:checked) + label img{
+    display: none;
+}
+
+/*botão comprar*/
+.comprar{
+    background: #018d3c;
+    border: none;
+    color: #333333;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    box-shadow: 0 1px 3px #777777;
+    display: block;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+}
+
+/*detalhes e caracteristica do produto*/
+.detalhes{
+    padding: 2em 0;
+}
+
+.detalhes h2{
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+.detalhes p{
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 36em;
+}
+
+table{
+    border-spacing: 0.2em;
+    border-collapse: separate;
+}
+
+thead{
+    background-color: #999999;
+}
+
+thead th{
+    font-weight: bold;
+    padding: 0.3em 1em;
+    text-align: center;
+}
+
+td{
+    padding: 0.3em;
+}
+
+td:first-child{
+    font-style: italic;
+}
+
+tr:nth-child(2n){
+    background-color: #cccccc;    
+}
+
+/**/
+
+
+
+/*mobile*/
+@media(min-width: 500px){
+    .detalhes{
+        font-size: 1.2em;
+    }
+}
+
+@media(min-width: 630px){
+    .produto{
+        position: relative;
+        padding-left: 40%;
+        font-size: 1.2em;
+    }
+
+    .cores{
+        position: static;
+        padding: 0;
+    }
+
+    .cores legend{
+        position: static;
+    }
+
+    .cores label img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 35%;
+        max-height: 100%;
+    }
+
+    .cores label::after{
+        position: static;
+        float: left;
+        margin-right: 10px;
+    }
+
+    fieldset{
+        display: inline-block;
+        vertical-align: top;
+        margin: 1em 0;
+        min-width: 240px;
+        width: 45%;
+    }
+}
