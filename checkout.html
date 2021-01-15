@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/open-iconic-master/font/css/open-iconic-bootstrap.css">
     <title>Checkout Mirror Fashion</title>
 </head>
 <body>
@@ -35,6 +36,57 @@
                 </dl>
             </div>
         </div>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" class="form-control" id="nome" name="nome" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000.00">
+                    </div>
+                    <div class="form-group custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="newsletter" value="sim" checked>
+                        <label for="newsletter" class="custom-control-label">Quero receber Newsletter da Mirror Fashion</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados de pagamento</legend>
+                    <div class="form-group">
+                        <label for="numero-cartao">Número - CVV</label>
+                        <input type="text" class="form-control" id="numero-cartao" name="numero-cartao" placeholder="0000 0000 0000 0000 - 000">
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label for="bandeira-cartao" class="input-group-text">Bandeira</label>
+                            </div>                                                
+                            <select class="custom-select" id="bandeira-cartao">
+                                <option disabled selected >Selecione uma opção...</option>
+                                <option value="master">MasterCard</option>
+                                <option value="visa">VISA</option>
+                                <option value="amex">American Express</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="validade-cartao">Validade</label>
+                        <input type="month" class="form-control"  id="validade-cartao" name="validade-cartao">
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn btn-primary">
+                    <span class="oi oi-thumb-up"></span>
+                    Confirmar Pedido
+                </button>
+            </form>
+        </div>        
     </div>
 </body>
 </html>
