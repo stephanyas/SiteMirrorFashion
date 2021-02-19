@@ -55,10 +55,10 @@
 	text-decoration: none;
 }
 
-
 /*Parte de estilo referente ao DEPARTAMENTOS, DESTAQUE e PESQUISA*/
 .destaque{
 	margin-top:10px;
+	position: relative;
 }
 
 .busca{
@@ -135,6 +135,27 @@
 	margin:10px;
 }
 
+/*Botão play e pause banner destaque
+.pause{
+	border-left: 10px solid #900900;
+	border-right: 10px solid  #900900;
+	height: 30px;
+	width: 5px;
+}
+
+.play{
+	border-left: 25px solid #900900;
+	border-bottom: 15px solid transparent;
+	border-top: 15px solid transparent;
+}
+
+.pause, .play{
+	display: block;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+*/
 /*Parte referente a Painel de novidades e mais vendidos*/
 .novidades{
 	float:left; /*Posicionamento do painel*/
@@ -178,6 +199,10 @@
 	transform: scale(1.2) rotate(5deg);
 }*/
 
+.painel li:nth-child(n+7){
+	display: none;
+}
+
 .painel h2{
 	font-size:24px;
 	font-weight:bold;
@@ -199,6 +224,10 @@
 	content:'\278'; 
 	padding-right:5px;
 	opacity:0.4;
+}
+
+.painel-aberto li:nth-child(n+7){
+	display: inline-block;
 }
 
 /*Parte referente ao rodapé*/
@@ -234,7 +263,9 @@
 	margin-left:25px;
 }
 
-/**/
+
+
+
 header{
 	position:relative;
 }
@@ -254,7 +285,7 @@ footer .container{
 	position:relative;
 }
 
-/*********Checkout*********/
+
 
 
 
