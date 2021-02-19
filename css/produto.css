@@ -161,8 +161,6 @@ tr:nth-child(2n){
     color: #555555;
 }
 
-
-
 /*mobile*/
 @media(min-width: 500px){
     .detalhes{
